@@ -1,0 +1,36 @@
+body{
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+  background-color: rgb(0, 0, 0);
+  margin: 50px;
+  width: 350px;
+  height: 550px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.screen {
+  background-color: white;
+  width: 330px;
+  height: 100px;
+  padding: 10px;
+  margin: 20px auto;
+  font-size: large;
+  color: black;
+  text-align: right;
+}
+
+.table-operands {
+  background-color: black;
+}
+
+td {
+  background-color: white;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  font-size: 40px;
+}
+

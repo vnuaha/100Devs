@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href ="style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+  <title>Calculator</title>
+</head>
+<body>
+    <div class ="container">
+        <header class="screen" id="result"></header>
+        <button onclick="clearScr()">Clear</button>
+        
+    <table class ="table-operands">
+        <tbody>
+            <tr>
+                <td onclick="sendValue('7')">7</td>
+                <td onclick="sendValue('8')">8</td>
+                <td onclick="sendValue('6')">6</td>
+                <td onclick="sendValue('/')">/</td>
+            </tr>
+            <tr>
+                <td onclick="sendValue('4')">4</td>
+                <td onclick="sendValue('5')">5</td>
+                <td onclick="sendValue('6')">6</td>
+                <td onclick="sendValue('*')">X</td>
+            </tr>
+            <tr>
+                <td onclick="sendValue('1')">1</td>
+                <td onclick="sendValue('2')">2</td>
+                <td onclick="sendValue('3')">3</td>
+                <td onclick="sendValue('+')">+</td>
+            </tr>
+            <tr>
+                <td onclick="sendValue('0')">0</td>
+                <td onclick="sendValue('.')">.</td>
+                <td onclick="equalTo()">=</td>
+                <td onclick="sendValue('-')">-</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    </div>
+</body>
+<script src ="main.js"></script>
+</html>
