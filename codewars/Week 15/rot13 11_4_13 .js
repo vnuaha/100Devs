@@ -27,7 +27,7 @@ function rot13(toCipher) {
   const originalString = "abcdefghijklmnopqrstuvwxyzabcdefghijklmABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLM";
   return toCipher.replace(/[a-z]/gi, letter => originalString[originalString.indexOf(letter) +13]);
 }
-rot13('nuwaha')
+rot13('nuwaha');
   
 
 
