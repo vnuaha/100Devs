@@ -30,20 +30,20 @@
 //   return (sum = digit.reduce(sum_reducer));
 // }
 
-function digital_root(n) {
-  //
-  let arr = n.toString(),
-    i,
-    sum = 0;
-  //if the length of the string is one , return that number
-  if (arr.length === 1) {
-    return +arr;
-  }
-  for (i = 0; i < arr.length; i++) {
-    sum += +arr[i];
-  }
-  return digital_root(sum);
-}
+// function digital_root(n) {
+//   //
+//   let arr = n.toString(),
+//     i,
+//     sum = 0;
+//   //if the length of the string is one , return that number
+//   if (arr.length === 1) {
+//     return +arr;
+//   }
+//   for (i = 0; i < arr.length; i++) {
+//     sum += +arr[i];
+//   }
+//   return digital_root(sum);
+// }
 
 //
 function digital_root(n) {
