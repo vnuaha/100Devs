@@ -21,9 +21,11 @@ img{
 /*******************************************/
 body{
 	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
 }
 .picture-container{
-	margin: 1200px;
+	display: flex;
+	width: 1200px;
 	height: 600px;
 	display:block;
 	justify-content: center;
@@ -34,9 +36,6 @@ body{
 	cursor: hover;
 	box-shadow: 1px 1px 3px #292929;
 }
-
-
-
 img{
 	width:800px;
 	height: 600px;
@@ -50,16 +49,13 @@ img{
 	justify-content: center;
 }
 .text-description{
-	padding-left: 10px;
-	padding-top: 20px;
+	padding-right: 30px;
+	padding: 10px;
 	float: right;
-	width: 300px;
+	width: 350px;
 	height: 600px;
-	padding-right: 10px;
-  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-
 .image-video-container{
 	float: left;
 	width: 500px;

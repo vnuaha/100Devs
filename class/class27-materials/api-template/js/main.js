@@ -16,7 +16,8 @@ function getFetch(){
         }else if(data.media_type === 'video'){
           document.querySelector('iframe').src = data.url
         }
-       
+        document.querySelector('.title').innerText = data.title
+        document.querySelector('.date').innerText = data.date
         document.querySelector('p').innerText = data.explanation
       })
       .catch(err => {
