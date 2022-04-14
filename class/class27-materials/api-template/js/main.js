@@ -1,4 +1,4 @@
-// Example fetch using pokemonapi.co
+//Example fetch using pokemonapi.co
 document.querySelector('button').addEventListener('click', getFetch)
 
 function getFetch(){
@@ -17,11 +17,10 @@ function getFetch(){
           document.querySelector('iframe').src = data.url
         }
        
-        document.querySelector('h3').innerText = data.explanation
+        document.querySelector('p').innerText = data.explanation
       })
       .catch(err => {
           console.log(`error ${err}`)
       });
 }
-
 
