@@ -1,0 +1,57 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+h2 { 
+	font-weight: 300;
+}
+
+.header,
+.section,
+.aside,
+.footer {
+  margin: 0 2.5% 25px 2.5%
+}
+
+.section {
+  float: left;
+  width: 45%; 
+}
+
+.aside {
+  float: right;
+  width: 45%;
+}
+.footer {
+  clear: both;
+  margin-bottom: 0;
+  align-content: center;
+  border-bottom: double red;
+ 
+}
+ .footer .result {
+  clear: both;
+  margin-bottom: 0;
+
+ .header button{
+  	border-radius: 50%;
+  }
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

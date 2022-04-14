@@ -35,9 +35,7 @@ body{
 	box-shadow: 1px 1px 3px #292929;
 }
 
-.picture-container:active{
-	box-shadow: 1px 1px 3px #292929;
-}
+
 
 img{
 	width:800px;
