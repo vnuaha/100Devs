@@ -1,0 +1,153 @@
+/*/******************************************
+/* CSS
+/*******************************************/
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+/* Box Model Hack */
+*{
+	box-sizing: border-box;
+	font-family: "Lexend Deca", sans-serif;
+	--prim-orange: #E38826;
+	--prim-cyan: #006970;
+	--prim-dark-cyan: #004241;
+	--neu-white: hsla(0, 0%, 100%, 0.75);
+	--neu-gray: hsl(0, 0%, 95%);
+	--gray: #999;
+	--dark-gray: #555;
+	--black: #000;
+}
+
+body{
+	display: flex;
+	overflow: hidden;
+	font-size: 15px;
+	height: 100vh
+	overflow:auto;
+}
+
+/******************************************
+ LAYOUT
+ ******************************************/
+ img{
+ 	display: block;
+ 	margin: 0 auto;
+ }
+
+ main,
+ footer{
+ 	background: white;
+ }
+ main{
+ 	display: flex;
+ 	flex-direction: row;
+ 	width:100%;
+ 	padding-top: 100px;
+ 	justify-content: center;
+ 	align-content: center;
+ }
+ section{
+ 	width: 25%;
+ 	color: white;
+ 	padding: 10px;
+ 	justify-content:left;
+ 	position: relative;
+ }
+ h1{
+ 	font-family: "Big Shoulders Display", sans-serif;
+ 	text-transform: uppercase;
+ 	font-weight: 700;
+ }
+ section p{
+ 	font-size: 13.8px;
+ 	line-height: 1.5rem;
+ 	
+ }
+ #first{
+ 	background: var(--prim-orange);
+ }
+ #first button{
+ 	background: var(--neu-gray);
+ 	color: var(--prim-orange);
+ }
+ #second{
+ 	background-color: var(--prim-cyan);
+ }
+ #second button{
+ 	background-color: var(--neu-gray);
+ 	color: var(--prim-cyan);
+ }
+ #third{
+ 	background: var(--prim-dark-cyan);
+ }
+
+ #third button{
+ 	background-color: var(--neu-gray);
+ 	color: var(--prim-dark-cyan);
+ }
+ 
+ button{
+ 	cursor: pointer;
+ 	text-align: center;
+ 	display: inline-block;
+ 	border-radius: 20px;
+ 	padding: 10px;
+ 	border: 2px solid var(--neu-gray);
+ 	bottom: 42px;
+ }
+
+ button:hover{
+ 	background-color: transparent;
+ 	color: var(--neu-gray);
+
+ }
+
+ button:active{
+ 	transform: scale(0.9);
+ }
+ footer{
+ 	width:100%;
+ 	margin: 0 auto;
+ 	position: absolute;
+ 	clear: both;
+ 	text-align: center;
+ 	bottom: 10px;
+ }
+/******************************************
+/* TABLET AND MOBILE
+/******************************************/
+@media only screen and (max-width: 844px){
+	body{
+		display: flex;
+		width: 100%;
+		overflow: scroll;
+		flex-wrap: wrap;
+	}
+	main{
+		flex-direction: column;
+		padding: 50px 0;
+	}
+
+	#first{
+		border-radius: 7px 7px 0 0;
+	}
+
+	#second {
+		border-radius: 0 0 7px 7px;
+	}
+
+	#third {
+		font-size: 0.77rem;
+	}
+
+	button{
+		display: inline-block;
+	}
+	footer{
+		clear: both;
+		position: relative;
+		width: auto;
+		padding-bottom: 10px;
+	}
+}
+
