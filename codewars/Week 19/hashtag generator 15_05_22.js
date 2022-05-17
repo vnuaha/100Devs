@@ -15,9 +15,8 @@
 // ""                                        =>  false
 
 function generateHashtag (str) {
-
   var hashtag = `#${str.trim().replace(/(?:\b|\s)(\w)/gi, (m, g) => g.toUpperCase())}`
   console.log(hashtag)
   return !!str && hashtag.length <= 140 && hashtag
 }
-generateHashtag ('')
+generateHashtag ('nhahhs the uyo')

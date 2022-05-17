@@ -31,23 +31,51 @@
 
 //     All inputs are valid. Array contains at least 1 digit. Each digit appears at most once.
 
-    // arr=[1,2,3,4,5,6,7,8]
-    // //coding and coding..
-    // //material1 and material2 cannot be selected at the same time
-    // for (i=0; i++; i<=4){
-    //    if (arr[i] && arr[i+1]){
-    //   console.log("material$(i) and material$(i+1) cannot be selected at the same time")
-    // }
-    // }
-    // for (i=5; i++; i<=6){
-    //     if(arr[i]==i && arr[i]==i+1) {
-    //         console.log("material$(i) and material$(i+1) must be selected at the same time")
-    //     } 
-    // }
-    //  for (i=7; i++; i<=8){
-    //     if (arr[i]==i || arr[i]==i+1) {
-    //         console.log("material$(i) or material$(i+1) must be selected (at least one, or both)")
-    //     }
-    //  }
+// arr=[1,2,3,4,5,6,7,8]
+// //coding and coding..
+// //material1 and material2 cannot be selected at the same time
+// for (i=0; i++; i<=4){
+//    if (arr[i] && arr[i+1]){
+//   console.log("material$(i) and material$(i+1) cannot be selected at the same time")
+// }
+// }
+// for (i=5; i++; i<=6){
+//     if(arr[i]==i && arr[i]==i+1) {
+//         console.log("material$(i) and material$(i+1) must be selected at the same time")
+//     }
+// }
+//  for (i=7; i++; i<=8){
+//     if (arr[i]==i || arr[i]==i+1) {
+//         console.log("material$(i) or material$(i+1) must be selected (at least one, or both)")
+//     }
+//  }
 
-      
+//FAILS TESTS
+function isValid(formula) {
+  if (formula.includes(1) && formula.includes(2)) {
+    return false;
+  } else if (formula.includes(3) && formula.includes(4)) {
+    return false;
+  } else if (formula.includes(5) && formula.includes(6)) {
+    return true;
+  } else if (formula.includes(7) || formula.includes(8)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+//PASSES ALL TESTS
+function isValid(formula) {
+  if (formula.includes(1) && formula.includes(2)) {
+    return false;
+  } else if (formula.includes(3) && formula.includes(4)) {
+    return false;
+  } else if (formula.includes(5) != formula.includes(6)) {
+    return false;
+  } else if (formula.includes(7) || formula.includes(8)) {
+    return true;
+  } else {
+    return false;
+  }
+}
