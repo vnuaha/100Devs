@@ -53,3 +53,44 @@ function convertToNum(val){
     return Number(val)
   }
 }
+
+
+
+// Scissors cuts Paper
+// Scissors decapitates Lizard
+// Paper covers Rock
+// Paper disproves Spock
+// Rock crushes Lizard
+// Rock crushes scissors
+// Lizard poisons Spock
+// Lizard eats Paper
+// Spock smashes Scissors
+// Spock vaporizes Rock
+
+
+
+// var RULES = {
+//   rock: {
+//       lizard: 'Rock crushes lizard',
+//       scissors: 'Rock crushes scissors'
+//   },
+//   paper: {
+//       spock: 'Paper disproves Spock',
+//       rock: 'Paper covers rock'
+//   },
+//   scissors: {
+//       lizard: 'Scissors beheads lizard',
+//       paper: 'Scissors cuts paper'
+//   },
+//   lizard: {
+//       spock: 'Lizard poisons Spock',
+//       paper: 'Lizard eats paper'
+//   },
+//   spock: {
+//       scissors: 'Spock distroys scissors',
+//       rock: 'Spock vaporizes rock'
+//   }
+
+// https://codereview.stackexchange.com/questions/102057/rock-paper-scissors-lizard-and-spock
+//https://discuss.codecademy.com/t/rock-paper-scissors-multiple-questions/534452
+//https://betterprogramming.pub/7-ways-to-code-rock-paper-scissors-in-javascript-4189a5e7e535
