@@ -67,12 +67,16 @@ function isValid(formula) {
 
 //PASSES ALL TESTS
 function isValid(formula) {
+  //material1 and material2 cannot be selected at the same time
   if (formula.includes(1) && formula.includes(2)) {
     return false;
+     // material3 and material4 cannot be selected at the same time
   } else if (formula.includes(3) && formula.includes(4)) {
     return false;
+    // material5 and material6 must be selected at the same time
   } else if (formula.includes(5) != formula.includes(6)) {
     return false;
+    // material7 or  material8 must be selected(at least one, or both)
   } else if (formula.includes(7) || formula.includes(8)) {
     return true;
   } else {
