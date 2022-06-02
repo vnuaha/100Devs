@@ -9,6 +9,7 @@ Example: n = 86240 should return "(2**5)(5)(7**2)(11)"
 */
 
 function primeFactors(remainder) {
+    //Prime factor decomposition of a number means writing it as a product of prime factors. 
   var factors = [], i;
   
   for (i = 2; i <= remainder; i++) {
