@@ -5,3 +5,20 @@
 // As an added challenge, upper- and lowercase letters are considered the same character, but the function should return the correct case for the initial letter. For example, the input 'sTreSS' should return 'T'.
 
 // If a string contains all repeating characters, it should return an empty string ("") or None -- see sample tests.
+
+function firstNonRepeatingLetter(s) {
+  return (
+    s[
+      s
+        .toLowerCase()
+        .split("")
+        .findIndex(
+          (letter) =>
+            s
+              .toLowerCase()
+              .split("")
+              .filter((l) => l === letter).length === 1
+        )
+    ] || ""
+  );
+}
