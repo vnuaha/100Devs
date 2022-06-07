@@ -53,8 +53,10 @@ function digital_root(n) {
     n
       .toString()
       .split("")
+      //iterate through list
       .reduce(function (acc, d) {
         return acc + +d;
       }, 0)
   );
 }
+
